@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="./styles.css">
+    <script src="app.js" defer> </script>
+</head>
+<body>
+    <div class="topbar">
+    <div class="container">
+      <div>Serving your home with dependable repair expertise</div>
+      <div>Mon–Sat · 7:00 AM–7:00 PM</div>
+    </div>
+  </div>
+
+  <header>
+    <div class="container">
+      <nav>
+        <a class="logo" href="#home"><span class="logo-mark">P</span>PeakLine</a>
+        <div class="navlinks">
+          <a href="#services">Services</a><a href="#why">Why Us</a><a href="#process">How It Works</a><a href="#reviews">Reviews</a>
+          <a class="btn btn-primary" href="#contact">Book a Repair</a>
+        </div>
+        <button class="menu" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">⚡ Fast • Honest • Professional</div>
+          <h1>Comfort restored.<br><span>Appliances fixed.</span></h1>
+          <p>Trusted HVAC and appliance repair for homes and businesses. From a broken air conditioner to a stubborn refrigerator, our technicians diagnose the problem and get your equipment running right.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Schedule Service →</a>
+            <a class="btn btn-outline" href="tel:+18005550199">☎ (800) 555-0199</a>
+          </div>
+          <div class="trust">
+            <div><strong>4.9/5</strong>Customer rating</div>
+            <div><strong>Same-day</strong>Service available</div>
+            <div><strong>90-day</strong>Repair warranty</div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="tool-icon">❄️</div>
+          <div class="hero-card-content">
+            <span class="badge">LOCAL SERVICE EXPERTS</span>
+            <h3>One call. One reliable team.</h3>
+            <p>HVAC, refrigerators, ovens, washers, dryers, dishwashers and more.</p>
+            <a class="btn btn-primary" href="#services">Explore Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">What we repair</div>
+          <h2>Expert service for the equipment you rely on</h2>
+          <p>Clear diagnostics, quality workmanship, and practical repair recommendations.</p>
+        </div>
+        <div class="cards">
+          <article class="card"><div class="icon">❄️</div><h3>Air Conditioning</h3><p>Cooling issues, refrigerant leaks, frozen coils, noisy units, airflow problems and AC maintenance.</p><a class="link" href="#contact">Book AC service →</a></article>
+          <article class="card"><div class="icon">🔥</div><h3>Heating & Furnaces</h3><p>Furnace failures, thermostat issues, ignition problems, uneven heat and seasonal tune-ups.</p><a class="link" href="#contact">Book heating service →</a></article>
+          <article class="card"><div class="icon">💨</div><h3>HVAC Systems</h3><p>Complete diagnostics and repair for central air, heat pumps, ductless systems and thermostats.</p><a class="link" href="#contact">Book HVAC service →</a></article>
+          <article class="card"><div class="icon">🧊</div><h3>Refrigerators</h3><p>Not cooling, leaking water, unusual noises, ice maker failures and temperature problems.</p><a class="link" href="#contact">Repair my fridge →</a></article>
+          <article class="card"><div class="icon">🍳</div><h3>Ranges & Ovens</h3><p>Burner problems, oven temperature issues, heating elements, igniters and control faults.</p><a class="link" href="#contact">Repair my oven →</a></article>
+          <article class="card"><div class="icon">🧺</div><h3>Washers & Dryers</h3><p>Won’t start, won’t drain, excessive vibration, no heat, long dry times and error codes.</p><a class="link" href="#contact">Repair my appliance →</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="why">
+      <div class="container why-grid">
+        <div class="why-panel">
+          <div class="big">24/7</div>
+          <h3>Peace of mind when equipment lets you down.</h3>
+          <p>We make repairs simple: show up prepared, explain the issue in plain language, and give you an honest path forward.</p>
+          <span class="badge">Emergency appointments available</span>
+        </div>
+        <div>
+          <div class="eyebrow">Why PeakLine</div>
+          <h2 style="font-size:clamp(32px,4vw,48px);line-height:1.08;color:var(--navy);letter-spacing:-.035em">Service built around your home, not a sales pitch.</h2>
+          <div class="check-list">
+            <div class="check">✓ <div><b>Upfront communication</b><br><span>Know what we found before work begins.</span></div></div>
+            <div class="check">✓ <div><b>Skilled technicians</b><br><span>Experienced with major HVAC and appliance brands.</span></div></div>
+            <div class="check">✓ <div><b>Quality parts</b><br><span>Repair solutions designed to last.</span></div></div>
+            <div class="check">✓ <div><b>Warranty-backed work</b><br><span>Added confidence after the repair.</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process" id="process">
+      <div class="container">
+        <div class="section-head"><div class="eyebrow">Simple process</div><h2>From broken to fixed in four steps</h2></div>
+        <div class="steps">
+          <div class="step"><div class="num">1</div><h3>Request service</h3><p>Tell us what's going wrong and choose a convenient time.</p></div>
+          <div class="step"><div class="num">2</div><h3>We diagnose</h3><p>A technician checks the system and explains the cause.</p></div>
+          <div class="step"><div class="num">3</div><h3>You approve</h3><p>Review the repair recommendation before we proceed.</p></div>
+          <div class="step"><div class="num">4</div><h3>We fix it</h3><p>We complete the repair and test everything before leaving.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews">
+      <div class="container">
+        <div class="section-head"><div class="eyebrow">Customer reviews</div><h2>Good service gets remembered</h2><p>A few examples of the experience your customers should expect.</p></div>
+        <div class="reviews">
+          <article class="quote"><div class="stars">★★★★★</div><p>“Our AC stopped working on the hottest day of the year. They found the issue quickly, explained the options, and had us cooling again that afternoon.”</p><div class="person">— Jamie R.</div></article>
+          <article class="quote"><div class="stars">★★★★★</div><p>“The technician arrived on time, was respectful of our home, and fixed our dryer without trying to sell us a new one. Exactly what we wanted.”</p><div class="person">— Morgan T.</div></article>
+          <article class="quote"><div class="stars">★★★★★</div><p>“Easy booking, clear pricing, and professional work. Our refrigerator is finally holding temperature again.”</p><div class="person">— Chris M.</div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contact">
+      <div class="container cta-grid">
+        <div>
+          <div class="eyebrow" style="color:#a9eaff">GET YOUR HOME RUNNING RIGHT</div>
+          <h2>Need a repair?<br>Let's get it fixed.</h2>
+          <p>Request service online and our team will follow up to confirm your appointment.</p>
+        </div>
+        <div class="form-wrap">
+          <h3>Request a service call</h3>
+          <form onsubmit="submitForm(event)">
+            <div class="form-grid">
+              <input required placeholder="Your name" aria-label="Your name" />
+              <input required type="tel" placeholder="Phone number" aria-label="Phone number" />
+              <input required type="email" class="full" placeholder="Email address" aria-label="Email address" />
+              <select required class="full" aria-label="Service needed">
+                <option value="">What needs repair?</option>
+                <option>Air Conditioning</option><option>Heating / Furnace</option><option>HVAC System</option>
+                <option>Refrigerator</option><option>Oven / Range</option><option>Washer / Dryer</option><option>Other</option>
+              </select>
+              <textarea placeholder="Briefly describe the problem" aria-label="Problem description"></textarea>
+              <button class="btn btn-primary full" type="submit">Request Appointment</button>
+            </div>
+          </form>
+          <div id="form-message" style="display:none;margin-top:12px;font-weight:750;color:#0a7a4b">Thanks! Your request has been received. We'll contact you shortly.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div><div class="logo" style="color:#fff"><span class="logo-mark">P</span>PeakLine</div><p style="margin-top:14px">HVAC and appliance repair built on dependable workmanship, honest communication, and respect for your home.</p></div>
+        <div><h4>Services</h4><a href="#services">Air Conditioning</a><a href="#services">Heating</a><a href="#services">HVAC Systems</a><a href="#services">Appliance Repair</a></div>
+        <div><h4>Company</h4><a href="#why">Why Us</a><a href="#process">How It Works</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></div>
+        <div><h4>Contact</h4><a href="tel:+18005550199">(800) 555-0199</a><a href="mailto:service@peakline.example">service@peakline.example</a><span style="font-size:14px">Mon–Sat · 7 AM–7 PM</span></div>
+      </div>
+      <div class="copyright"><span>© 2026 PeakLine HVAC & Appliance Repair. All rights reserved.</span><span>Licensed & insured • Warranty-backed repairs</span></div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu(){
+      const nav = document.querySelector('.navlinks');
+      const open = nav.style.display === 'flex';
+      nav.style.display = open ? '' : 'flex';
+      if(!open){
+        nav.style.position='absolute'; nav.style.top='70px'; nav.style.left='4%'; nav.style.right='4%';
+        nav.style.background='#fff'; nav.style.padding='20px'; nav.style.borderRadius='15px';
+        nav.style.boxShadow='0 18px 40px rgba(11,31,51,.14)'; nav.style.flexDirection='column'; nav.style.alignItems='stretch';
+      }
+    }
+    function submitForm(e){
+      e.preventDefault();
+      document.getElementById('form-message').style.display='block';
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
